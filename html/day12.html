@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <!-- Form tag with all possible attributes -->
+<form action="/submit" method="post" enctype="multipart/form-data" target="_self" autocomplete="on" novalidate>
+
+  <!-- Fieldset groups form elements visually and semantically -->
+  <fieldset>
+
+    <!-- Legend gives a title to the fieldset group -->
+    <legend>Complete Form Example</legend>
+
+    <!-- Label associated with a text input -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    <br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com">
+    <br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+
+    <!-- Search input -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search">
+    <br>
+
+    <!-- URL input -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com">
+    <br>
+
+    <!-- Tel input -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+    <br>
+
+    <!-- Number input -->
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="100" step="1">
+    <br>
+
+    <!-- Date input -->
+    <label for="birthdate">Birth Date:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    <br>
+
+    <!-- Month input -->
+    <label for="birthmonth">Birth Month:</label>
+    <input type="month" id="birthmonth" name="birthmonth">
+    <br>
+
+    <!-- Week input -->
+    <label for="week">Week:</label>
+    <input type="week" id="week" name="week">
+    <br>
+
+    <!-- Time input -->
+    <label for="appointment">Appointment Time:</label>
+    <input type="time" id="appointment" name="appointment">
+    <br>
+
+    <!-- Datetime-local input -->
+    <label for="meeting">Meeting Time:</label>
+    <input type="datetime-local" id="meeting" name="meeting">
+    <br>
+
+    <!-- Color input -->
+    <label for="favcolor">Favorite Color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#000000">
+    <br>
+
+    <!-- Checkbox inputs -->
+    <p>Services Interested In:</p>
+    <input type="checkbox" id="haircut" name="services" value="haircut">
+    <label for="haircut">Haircut</label>
+
+    <input type="checkbox" id="shave" name="services" value="shave">
+    <label for="shave">Shave</label>
+    <br>
+
+    <!-- Radio button inputs -->
+    <p>Choose Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+
+    <!-- File input -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+    <br>
+
+    <!-- Hidden input -->
+    <input type="hidden" name="token" value="abc123xyz">
+    <br>
+
+    <!-- Range input -->
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100">
+    <br>
+
+    <!-- Textarea -->
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="4" cols="30" maxlength="500"></textarea>
+    <br>
+
+    <!-- Select with optgroup -->
+    <label for="barber">Choose a Barber:</label>
+    <select id="barber" name="barber">
+      <optgroup label="Senior Barbers">
+        <option value="john">John</option>
+        <option value="mike">Mike</option>
+      </optgroup>
+      <optgroup label="Junior Barbers">
+        <option value="tom">Tom</option>
+        <option value="alex">Alex</option>
+      </optgroup>
+    </select>
+    <br>
+
+    <!-- Input with datalist for auto-suggestions -->
+    <label for="country">Country:</label>
+    <input list="countries" id="country" name="country">
+    <datalist id="countries">
+      <option value="USA">
+      <option value="UK">
+      <option value="Canada">
+      <option value="Australia">
+    </datalist>
+    <br>
+
+    <!-- Output tag for displaying results (used with JS normally) -->
+    <label>Calculation Output:</label>
+    <output name="result" for="a b">--</output>
+    <br>
+
+    <!-- Reset and Submit buttons -->
+    <button type="reset">Reset Form</button>
+    <button type="submit">Submit Form</button>
+
+    <!-- Button with no type (defaults to submit) -->
+    <button>Default Submit</button>
+
+    <!-- Button with type=button (used for JS normally) -->
+    <button type="button">Click Me (No Submit)</button>
+
+  </fieldset>
+</form>
+
+    
+</body>
+</html>
