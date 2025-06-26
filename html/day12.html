@@ -16,8 +16,8 @@
     <legend>Complete Form Example</legend>
 
     <!-- Label associated with a text input -->
-    <label for="fullname">Full Name:</label>
-    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    <label for="fullname">Full Name <span style="color: red;">*</span>:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required maxlength="4">
     <br>
 
     <!-- Email input -->
@@ -87,6 +87,9 @@
 
     <input type="checkbox" id="shave" name="services" value="shave">
     <label for="shave">Shave</label>
+
+    <input type="checkbox" id="beardtrim" name="services" value="breadtrim">
+<label for="breadtrim">Breadtrim</label>
     <br>
 
     <!-- Radio button inputs -->
