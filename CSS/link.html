@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link CSS</title>
+    <style>
+
+        *{
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: block;
+        }
+
+        #l1{
+            color: black;
+        }
+
+        #l1:hover{
+            color: green;
+        }
+
+        #l2{
+            color: green;
+            text-decoration: none;
+        }
+
+        #l2:hover{
+            text-decoration: underline;
+        }
+
+        #l3{
+            color: #000;
+            text-decoration: none;
+            border: 1px solid green;
+            padding: 10px;
+        }
+
+        #l3:hover{
+            color: white;
+            background-color: green;
+        }
+
+        #l4{
+            color: white;
+            background-color: red;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #l4:hover{
+            background-color: rgba(255, 0, 0, 0.383);
+        }
+    </style>
+</head>
+<body>
+
+ <div class="container">
+    <a href="https://www.google.com" id="l1">Text Link</a>
+    <a href="#" id="l2">Text Link</a>
+    <a href="#" id="l3">Link Button</a>
+    <a href="#" id="l4">Link Button</a>
+ </div>
+    
+</body>
+</html>
